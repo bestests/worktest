@@ -1,0 +1,27 @@
+.treeUl, .treeUl ul {
+    border-left: 1px dashed lightgray;
+    padding-left: 15px;
+}
+
+.treeUl li {
+    list-style: none;
+}
+
+.treeUl li.code-parent {
+    cursor: pointer;
+}
+.treeUl .code-parent.open > ul {
+    display: block;
+}
+
+.treeUl .code-parent.close > ul {
+    display: none;
+}
+
+.treeUl .code-parent.close:before {
+    content: "+";
+}
+
+.treeUl li:before {
+    content: "-";
+}

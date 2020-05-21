@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Tree Menu</title>
+        <link rel="stylesheet" type="text/css" href="./tree.css" />
+    </head>
+    <body>
+        <div id="tree"></div>
+        <script src="./treeData.js"></script>
+        <script src="./tree.js"></script>
+        <script>
+            let tree = new TreeMenu(treeData)
+        
+            let treeObj = document.getElementById("tree")
+
+            tree.treeInit(treeObj)
+            
+        </script>
+
+    </body>
+</html>
